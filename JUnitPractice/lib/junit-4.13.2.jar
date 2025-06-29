@@ -1,0 +1,40 @@
+---FILEPATH src/main/Calculator.java
+---FIND
+// This class defines a simple calculator
+public class Calculator {
+    // Method to add two integers
+    public int add(int a, int b) {
+        // Implementation goes here
+    }
+}
+---REPLACE
+// This class defines a simple calculator
+public class Calculator {
+    // Method to add two integers
+    public int add(int a, int b) {
+        return a + b;
+    }
+}
+---COMPLETE
+
+---FILEPATH src/test/HelloWorldTest.java
+---FIND
+// This is a simple test class
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+
+public class HelloWorldTest {
+    // Test method goes here
+}
+---REPLACE
+// This is a simple test class
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+
+public class HelloWorldTest {
+    @Test
+    public void testHelloWorld() {
+        assertEquals("Hello, World!", "Hello, World!");
+    }
+}
+---COMPLETE
